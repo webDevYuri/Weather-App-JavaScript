@@ -1,0 +1,111 @@
+::after, ::before, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin-top: 50px;
+    background-color: #5e5e5e6e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 40px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    height: max-content;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search input {
+    padding: 15px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    width: 250px;
+    background-color: #f5f5f5;
+    font-weight: 500;
+    color: #414141;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f5f5f5;
+    transition: all .3s ease-in-out;
+}
+
+.search button:hover {
+    background-color: #ffffff;
+}
+.city {
+    text-align: center;
+}
+
+.city img {
+    width: 200px;
+}
+
+.search button img {
+    width: 18px;
+}
+
+.bottom-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.bottom-content h3 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.bottom-content h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wind-speed-container, .humidity-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wind-speed-container img, .humidity-container img {
+    width: 40px;
+}
+.weather {
+    display: none;
+}
+.error {
+    display: none;
+    margin-right: auto;
+    margin-top: 10px;
+}
